@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Employee | Enabler Tool</title>
+  <link rel="stylesheet" href="find-employee.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- ✅ Top Navbar -->
+  <header class="navbar">
+    <div class="logo-section">
+      <img src="https://www.creativefabrica.com/wp-content/uploads/2021/10/12/ET-logo-design-vector-Graphics-18681931-1-1-580x386.jpg" alt="ET Logo" class="logo">
+      <h2>Enabler Tool</h2>
+    </div>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="find-employee.html" class="active">Find Employee</a>
+      <a href="modify-employee.html">Modify Employee</a>
+      <a href="#">Reports</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </div>
+  </header>
+
+  <!-- ✅ Main Layout -->
+  <div class="main-content">
+    <!-- 🔍 Search Panel -->
+    <section class="search-panel">
+      <h1><i class="fas fa-search"></i> Find Employee</h1>
+      <p>Use filters below to refine your employee search.</p>
+
+      <form id="findEmployeeForm">
+        <div class="filters">
+          <select id="department">
+            <option value="">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="Finance">Finance</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Sales">Sales</option>
+            <option value="HR">HR</option>
+          </select>
+
+          <select id="country">
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Japan">Japan</option>
+          </select>
+
+          <select id="state">
+            <option value="">Select State</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Texas">Texas</option>
+            <option value="Wales">Wales</option>
+            <option value="Osaka">Osaka</option>
+            <option value="Delhi">Delhi</option>
+          </select>
+
+          <select id="status">
+            <option value="">Select Status</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn-primary"><i class="fas fa-filter"></i> Search</button>
+          <button type="button" id="clearFilters" class="btn-secondary"><i class="fas fa-sync-alt"></i> Clear</button>
+        </div>
+      </form>
+
+      <div class="table-container" id="employeeResults">
+        <p class="placeholder">Results will appear here...</p>
+      </div>
+    </section>
+
+    <!-- 📊 Right Sidebar -->
+    <aside class="sidebar">
+      <h3>Employee Summary</h3>
+      <div class="stat-card total">
+        <h4>Total Employees</h4>
+        <p id="totalEmployees">0</p>
+      </div>
+      <div class="stat-card active">
+        <h4>Active</h4>
+        <p id="activeEmployees">0</p>
+      </div>
+      <div class="stat-card inactive">
+        <h4>Inactive</h4>
+        <p id="inactiveEmployees">0</p>
+      </div>
+      <button id="exportBtn" class="btn-export"><i class="fas fa-file-excel"></i> Export to Excel</button>
+    </aside>
+  </div>
+
+  <footer>© 2025 Enabler Tool | Designed by <b>Monish</b></footer>
+
+  <script src="find-employee.js"></script>
+</body>
+</html>

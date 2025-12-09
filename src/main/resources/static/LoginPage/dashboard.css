@@ -1,0 +1,129 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0ba29d, #58d5d1);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ NAVBAR */
+.navbar {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #0ba29d;
+}
+
+.navbar h2 {
+  color: #0ba29d;
+  font-weight: 600;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#logoutBtn {
+  padding: 8px 15px;
+  background-color: #0ba29d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#logoutBtn:hover {
+  background-color: #088c86;
+}
+
+#welcomeUser {
+  color: #333;
+  font-size: 15px;
+}
+
+/* ✅ DASHBOARD BODY */
+.dashboard-container {
+  text-align: center;
+  padding: 60px 20px;
+  flex-grow: 1;
+}
+
+.dashboard-container h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #f2f2f2;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.dashboard-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* ✅ CARDS */
+.card {
+  background: white;
+  width: 250px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+  font-size: 40px;
+  color: #0ba29d;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #0ba29d;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: white;
+  background: rgba(0, 0, 0, 0.15);
+}

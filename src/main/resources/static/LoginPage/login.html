@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Status Tool - Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="login-wrapper">
+    <!-- Left Section -->
+    <div class="left-panel">
+      <img
+        src="https://www.creativefabrica.com/wp-content/uploads/2021/10/12/ET-logo-design-vector-Graphics-18681931-1-1-580x386.jpg"
+        alt="ET Logo"
+        class="logo"
+      />
+      <h1>Hello, Welcome!
+        <br>
+        To Enabler Tool
+      </h1>
+      <p>
+        Enabler Tool helps you manage employee activity efficiently.<br />
+        Track <b>Active</b> and <b>Inactive</b> employee status in one place.
+      </p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-panel">
+      <h2>Login to Continue</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" required />
+        </div>
+
+        <div class="input-group password-wrapper">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" required />
+          <i class="fas fa-eye" id="togglePassword"></i>
+        </div>
+
+        <!-- ✅ Remember Me -->
+        <div class="remember-me">
+          <input type="checkbox" id="rememberMe" />
+          <label for="rememberMe">Remember Me</label>
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+        <p id="error-msg" class="error-msg"></p>
+
+        <div class="forgot-password">
+        <a href="forgot-password.html">Forgot Password?</a>
+        </div>
+        <div class="create-account">
+        <a href="signup.html">Create an Account</a>
+        </div>
+
+      </form>
+      <footer>© 2025 Monish. All Rights Reserved.</footer>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Employees</title>
+  <link rel="stylesheet" href="modify-employee.css">
+</head>
+<body>
+  <div class="top-banner">
+    <div class="banner-content">
+      <img src="https://www.creativefabrica.com/wp-content/uploads/2021/10/12/ET-logo-design-vector-Graphics-18681931-1-1-580x386.jpg" alt="ET Logo">
+      <h1>Employee Management System</h1>
+    </div>
+    <button class="home-btn" onclick="window.location.href='dashboard.html'">🏠 Back to Home</button>
+  </div>
+
+  <div class="container">
+    <!-- 🔍 Search Section -->
+    <section class="search-section">
+      <h2>🔍 Find Employee</h2>
+      <div class="search-bar">
+        <input type="number" id="searchId" placeholder="Enter Employee ID" />
+        <button id="searchBtn">Search</button>
+      </div>
+    </section>
+
+    <!-- ✅ Employee Details -->
+    <section id="employeeDetails" class="hidden employee-card">
+      <h2>🧾 Employee Details</h2>
+      <form id="employeeForm">
+        <div class="form-grid">
+          <div class="form-field"><label>Employee ID</label><input type="text" id="searchIdDisplay" readonly /></div>
+          <div class="form-field"><label>Name</label><input type="text" id="empName" required /></div>
+          <div class="form-field"><label>Department</label><input type="text" id="empDept" required /></div>
+          <div class="form-field"><label>Email</label><input type="email" id="empEmail" required /></div>
+          <div class="form-field"><label>Phone Number</label><input type="text" id="empPhone" required /></div>
+          <div class="form-field"><label>Country</label><input type="text" id="empCountry" required /></div>
+          <div class="form-field"><label>Region</label><input type="text" id="empRegion" required /></div>
+          <div class="form-field"><label>State</label><input type="text" id="empState" required /></div>
+          <div class="form-field"><label>Status</label><input type="text" id="empStatus" required /></div>
+          <div class="form-field"><label>Project Name</label><input type="text" id="empProject" required /></div>
+          <div class="form-field"><label>Joining Date</label><input type="date" id="empJoining" /></div>
+          <div class="form-field"><label>Last Updated</label><input type="text" id="empLastUpdated" readonly /></div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" id="updateBtn" class="update-btn">💾 Update</button>
+          <button type="button" id="deleteBtn" class="delete-btn">🗑️ Delete</button>
+        </div>
+      </form>
+    </section>
+
+    <hr />
+
+    <!-- ➕ Add Employee -->
+    <div class="add-section">
+      <button id="addEmployeeBtn" class="add-btn">+ Add New Employee</button>
+    </div>
+  </div>
+
+  <!-- ✅ Modal -->
+  <div id="addModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>➕ Add New Employee</h2>
+      <form id="addEmployeeForm">
+        <input type="text" id="newName" placeholder="Name" required />
+        <input type="text" id="newDept" placeholder="Department" required />
+        <input type="email" id="newEmail" placeholder="Email" required />
+        <input type="text" id="newPhone" placeholder="Phone Number" required />
+        <input type="text" id="newCountry" placeholder="Country" required />
+        <input type="text" id="newRegion" placeholder="Region" required />
+        <input type="text" id="newState" placeholder="State" required />
+        <input type="text" id="newStatus" placeholder="Status" required />
+        <input type="text" id="newProject" placeholder="Project Name" required />
+        <label class="joining-label">Joining Date</label>
+        <input type="date" id="newJoining" />
+        <div class="btn-group">
+          <button type="submit" class="save-btn">Save</button>
+          <button type="button" id="cancelBtn" class="cancel-btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="modify-employee.js"></script>
+</body>
+</html>

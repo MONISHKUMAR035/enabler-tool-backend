@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Enabler Tool</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+  <div class="signup-wrapper">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <img src="https://www.creativefabrica.com/wp-content/uploads/2021/10/12/ET-logo-design-vector-Graphics-18681931-1-1-580x386.jpg" class="logo" alt="ET Logo">
+      <h1>Join Enabler Tool</h1>
+      <p>Manage employee activity effortlessly.<br> Track <b>Active</b> and <b>Inactive</b> status in real-time.</p>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <h2>Create Your Account</h2>
+
+      <form id="signupForm">
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="fullname" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="input-group">
+          <label>Username</label>
+          <input type="text" id="username" placeholder="Choose a username" required />
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="password" placeholder="Enter password" required />
+        </div>
+
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Confirm password" required />
+        </div>
+
+        <button type="submit" class="signup-btn">Create Account</button>
+        <p id="message" class="message"></p>
+
+        <div class="back-to-login">
+          <a href="login.html">← Back to Login</a>
+        </div>
+      </form>
+
+      <footer>© 2025 Monish. All Rights Reserved.</footer>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
